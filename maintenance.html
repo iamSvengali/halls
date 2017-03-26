@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+   <head>
+      <title>Maintenance Issues</title>
+        <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" type="text/css" href="assets/semantic.min.css">
+
+   </head>
+   
+<body>
+<div class="ui three column grid">
+<div class="column"></div>
+<div class="column">
+	<br><br>
+	<h1 class="ui dividing header">Issue</h1><br>
+
+	<form class="ui form">
+    <div class="ui form">
+	<div class="field">
+		<label for="name">Registration Number</label>
+		<input type="text" name="Registration_Number" placeholder="Reg. No." />
+	</div>
+	<div class="field">
+		<label>Hall</label>
+		<input type="text" name="hall" placeholder="Hall" />
+	</div>
+	<div class="field">
+		<label>Room Number</label>
+		<input type="text" name="roomno" placeholder="Room No." />
+	</div>
+	<div class="field">
+		<label>Date</label>
+		<input type="date" name="Date" placeholder="Current Date" />
+	</div>
+	<div class="field">
+	<label>Type of Issue</label>
+	  <div>
+		 <select class="ui dropdown" name="issue">
+           <option value="bed">Bed</option>
+           <option value="drape">Drapes</option>
+           <option value="table">Table</option>
+           <option value="chair">Chair</option>
+           <option value="wardrobe">Wardrobe</option>
+         </select>
+	</div>
+
+		<label>Phone Number</label>
+		<input type="text" name="Phone_Number" placeholder="Phone Number" />
+	</div>
+	<div class="ui form">
+	    <div class="field">
+	    <label>Comments</label>
+		<textarea name="Comments" rows="5"></textarea>
+	</div>
+	</div>
+	<br>
+	<button class="ui button" type="submit">Report</button>
+
+</form>
+</div>
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script src="semantic.min.js"></script>
+<script>
+$('.ui.radio.checkbox')
+   .checkbox()
+   ;
+$('.dropdown')
+   .dropdown()
+   ;
+</script>
+</body>
